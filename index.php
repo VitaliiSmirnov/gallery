@@ -2,8 +2,7 @@
 <html>
 <head>
     <?php
-        define ("title", "Пример адаптивного сайта");
-        $image="https://fakeimg.pl/350x200/?text=World&font=lobster";
+        include "pg/main.php"
     ?>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
@@ -13,24 +12,12 @@
 <body>
     <div class="image_gallery">
         <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
-        </div>        <div>
-            <img src="<?php echo $image ?>">
+            <img src="<?php echo($image[0]['url']); ?>">
         </div>
+        <div>
+            <img src="<?php echo($image[1]['url']); ?>">
+        </div>
+
     </div>
 </body>
 </html>
